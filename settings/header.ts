@@ -1,7 +1,5 @@
 import { IHeaderLink } from "@/typings/header.types";
 
-export const headerTitle: string = "EduRed.";
-
 export const headerLinks: IHeaderLink[] = [
   {
     name: "Home",
