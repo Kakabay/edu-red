@@ -21,10 +21,14 @@ module.exports = {
         GRAY: "#737373",
         WHITE: "#FEFEFE",
         GREEN: "#609966",
+        BLACK: "#242424",
       },
       backgroundImage: {
         IMAGE:
           "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(36, 36, 36, 0.2) 100%)",
+      },
+      gridTemplateColumns: {
+        HEADER: "1fr 1fr",
       },
     },
   },
