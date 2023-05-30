@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import "./globals.css";
 import { Space_Grotesk } from "next/font/google";
 
@@ -19,7 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={spacegr.className}>{children}</body>
+      <body className={`${spacegr.className} bg-BG`}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
