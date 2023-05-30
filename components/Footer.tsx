@@ -6,7 +6,7 @@ import FooterLink from "./FooterLink";
 
 const Footer = () => {
   return (
-    <footer className="footer bg-BLACK py-10">
+    <footer className="footer bg-BLACK py-10 mt-[80px]">
       <Container className="grid grid-cols-HEADER">
         <div className="footer-left flex flex-col gap-6">
           <h6 className="text-SMALL_TITLE text-WHITE font-bold">{title}</h6>

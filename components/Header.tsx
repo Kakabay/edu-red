@@ -6,7 +6,7 @@ import { title } from "@/settings/title";
 
 const Header = () => {
   return (
-    <header className="header">
+    <header className="header mb-[40px]">
       <Container className="grid grid-cols-HEADER gap-6 items-center">
         <div className="header-left">
           <Link href={"/"}>
