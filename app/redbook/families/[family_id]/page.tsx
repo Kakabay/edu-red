@@ -31,6 +31,7 @@ const FamilyList = ({ params }: { params: { family_id: string } }) => {
           {plantRedbook
             ? items.map((item) => (
                 <ItemCard
+                  type="redbook"
                   name={item.name}
                   img={item.img}
                   key={item.id}
