@@ -10,7 +10,7 @@ const FooterLink = ({ name, path }: IHeaderLink) => {
   return (
     <Link
       href={path}
-      className="text-TEXT font-normal text-GRAY transition-all py-10"
+      className="text-TEXT font-normal text-GRAY transition-all py-10 relative group hover:text-WHITE"
       style={
         comparePathname(path, pathname)
           ? { color: colors.WHITE, fontWeight: "bold" }
@@ -18,6 +18,8 @@ const FooterLink = ({ name, path }: IHeaderLink) => {
       }
     >
       {name}
+      <span className="absolute top-8 right-0 h-[1px] w-0 bg-WHITE group-hover:w-full transition-all"></span>
+      <span className="absolute bottom-8 left-0 h-[1px] w-0 bg-WHITE group-hover:w-full transition-all"></span>
     </Link>
   );
 };
