@@ -1,6 +1,6 @@
 import Container from "@/components/Container";
 import ItemCard from "@/components/ItemCard";
-import { plantRedbook } from "@/data/redbooks";
+import { plantRedbook, volunteeringData } from "@/data/redbooks";
 import { FunctionComponent } from "react";
 
 interface VolunteeringProps {}
@@ -13,14 +13,13 @@ const Volunteering: FunctionComponent<VolunteeringProps> = () => {
           Volunteering
         </h2>
         <section className="red-book-item-list grid grid-cols-3 gap-x-[24px] gap-y-[40px] content-center">
-          {plantRedbook
-            ? plantRedbook.families[0].items.map((item) => (
+          {volunteeringData
+            ? volunteeringData.items.map((item) => (
                 <ItemCard
                   name={item.name}
                   img={item.img}
                   key={item.id}
-                  org="Repetek"
-                  familyId={item.familyId}
+                  org={item.org}
                   id={item.id}
                   text={item.text}
                   type="volunteering"

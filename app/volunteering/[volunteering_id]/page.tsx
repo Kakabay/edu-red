@@ -2,7 +2,7 @@ import Contact from "@/components/Contact";
 import ContactForm from "@/components/ContactForm";
 import Container from "@/components/Container";
 import Post from "@/components/Post";
-import { plantRedbook } from "@/data/redbooks";
+import { plantRedbook, volunteeringData } from "@/data/redbooks";
 import { getItemById } from "@/utils/getById";
 import Link from "next/link";
 
@@ -15,7 +15,7 @@ interface IProps {
 const VolunteeringItem = ({ params }: IProps) => {
   const { volunteering_id } = params;
 
-  const item = getItemById(volunteering_id, plantRedbook.families[0].items);
+  const item = getItemById(volunteering_id, volunteeringData.items);
 
   return (
     <main>
@@ -26,7 +26,7 @@ const VolunteeringItem = ({ params }: IProps) => {
               {item.name}
             </h2>
             <h3 className="red-book-subnav text-GRAY text-SMALL_TEXT">
-              <Link href={"/volunteering"}>Volunteering</Link> -{" "}
+              <Link href={"/volunteering"}>Volunteering</Link> {" | "}
               <span className="font-bold text-BLACK">{item.name}</span>
             </h3>
           </div>

@@ -12,7 +12,7 @@ const Families = () => {
             Red book
           </h2>
           <h3 className="red-book-subnav text-GRAY text-SMALL_TEXT">
-            <Link href={"/redbook"}>Red book</Link> /{" "}
+            <Link href={"/redbook"}>Red book</Link> {" | "}
             <span className="font-bold text-BLACK">
               The Red Data Book of Turkmenistan : Plants and Fungi{" "}
             </span>

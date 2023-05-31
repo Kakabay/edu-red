@@ -1,7 +1,7 @@
 import Contact from "@/components/Contact";
 import Container from "@/components/Container";
 import Post from "@/components/Post";
-import { plantRedbook } from "@/data/redbooks";
+import { plantRedbook, resData } from "@/data/redbooks";
 import { getItemById } from "@/utils/getById";
 import Link from "next/link";
 
@@ -13,7 +13,7 @@ interface IProps {
 
 const ReservesItem = ({ params }: IProps) => {
   const { reserve_id } = params;
-  const item = getItemById(reserve_id, plantRedbook.families[0].items);
+  const item = getItemById(reserve_id, resData.items);
 
   return (
     <main>
@@ -24,8 +24,8 @@ const ReservesItem = ({ params }: IProps) => {
               {item.name}
             </h2>
             <h3 className="red-book-subnav text-GRAY text-SMALL_TEXT">
-              <Link href={"/reserves"}>National reserves</Link> /{" "}
-              <span className="font-bold text-BLACK"> {item.name}</span>`
+              <Link href={"/reserves"}>National reserves</Link> {" | "}
+              <span className="font-bold text-BLACK"> {item.name}</span>
             </h3>
           </div>
 

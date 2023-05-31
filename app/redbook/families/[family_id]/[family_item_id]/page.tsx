@@ -22,23 +22,19 @@ const FamilyItem = ({ params }: IProps) => {
       <Container className="flex flex-col gap-[48px]">
         <div className="red-book-nav flex flex-col gap-[8px]">
           <h2 className="red-book-title font-bold text-BIT_TITLE text-BLACK">
-            Salsola botschantzevii
+            {item.name}
           </h2>
           <h3 className="red-book-subnav text-GRAY text-SMALL_TEXT">
-            <Link href={"/redbook"}>Red book</Link> /{" "}
+            <Link href={"/redbook"}>Red book</Link> {" | "}
             <Link href={"/redbook/families"}>
               The Red Data Book of Turkmenistan : Plants and Fungi
-            </Link>{" "}
-            -{" "}
-            <Link href={"/redbook/families/families-list"}>
+            </Link>
+            {" | "}
+            <Link href={`/redbook/families/${family_id}`}>
               Liliopsida, Monocotyledones
-            </Link>{" "}
-            -
-            <span className="font-bold text-BLACK">
-              {" "}
-              Salsola botschantzevii
-            </span>
-            `
+            </Link>
+            {" | "}
+            <span className="font-bold text-BLACK">{item.name}</span>
           </h3>
         </div>
 
