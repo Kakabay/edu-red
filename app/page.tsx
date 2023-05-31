@@ -25,10 +25,10 @@ const Home = () => {
     <Container className="flex flex-col gap-[48px]">
       <h2 className="news-title text-BLACK font-bold text-BIT_TITLE"><span className="text-GREEN">News and Updates</span> for a Sustainable Turkmenistan</h2>
       <div className="news-content flex flex-col gap-[32px]">
-        <MainBlock text="Turkmenistan Implements New Green Policies to Combat Climate Change" textSize={"SMALL"} imageLink="/main-news.jpg"/>
+        <MainBlock link="/" text="Turkmenistan Implements New Green Policies to Combat Climate Change"  imageLink="/main-news.jpg"/>
         <div className="news-content-bottom flex justify-between gap-[32px]">
-        <SecondaryBlock imageLink="/news-sec-1.jpg" textSize={"SMALL"} text="Rare Discovery: Endangered Species Spotted in Turkmenistan's Protected Areas"/>
-        <SecondaryBlock imageLink="/news-sec-2.jpg" textSize={"SMALL"} text="Rare Discovery: Endangered Species Spotted in Turkmenistan's Protected Areas"/>
+        <SecondaryBlock link="/" imageLink="/news-sec-1.jpg" text="Rare Discovery: Endangered Species Spotted in Turkmenistan's Protected Areas"/>
+        <SecondaryBlock link="/" imageLink="/news-sec-2.jpg" text="Rare Discovery: Endangered Species Spotted in Turkmenistan's Protected Areas"/>
         </div>
       </div>
     </Container>
