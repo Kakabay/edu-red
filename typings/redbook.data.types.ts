@@ -13,5 +13,7 @@ export interface IRedbookFamily {
 
 export interface IRedbookData {
   id: number;
+  name: string;
+  img: string;
   families: IRedbookFamily[];
 }
