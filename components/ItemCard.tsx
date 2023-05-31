@@ -11,7 +11,9 @@ const ItemCard = ({ name, id, img, org, familyId, type }: IItemCard) => {
   return (
     <Link
       href={
-        type === "redbook" ? `/${type}/${familyId}/${id}` : `/${type}/${id}`
+        type === "redbook"
+          ? `/${type}/families/${familyId}/${id}`
+          : `/${type}/${id}`
       }
       className="flex flex-col gap-[16px]"
     >
