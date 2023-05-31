@@ -1,5 +1,5 @@
-import { FunctionComponent } from 'react';
-import Button from '@/components/Button';
+import { FunctionComponent } from "react";
+import Button from "@/components/Button";
 
 interface ContactFormProps {}
 
@@ -20,7 +20,7 @@ const ContactForm: FunctionComponent<ContactFormProps> = () => {
           required
         />
         <input
-          type="number"
+          type="text"
           className="bg-transparent rounded-[8px] text-BLACK text-TEXT px-[16px] py-[14px] w-[480px] border border-BLACK"
           placeholder="Enter your phone"
           required
