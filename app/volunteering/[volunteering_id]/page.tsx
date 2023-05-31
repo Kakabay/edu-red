@@ -25,10 +25,10 @@ const VolunteeringItem = ({ params }: IProps) => {
             <h2 className="red-book-title font-bold text-BIT_TITLE text-BLACK">
               {item.name}
             </h2>
-            <h3 className="red-book-subnav text-GRAY text-SMALL_TEXT">
+            {/* <h3 className="red-book-subnav text-GRAY text-SMALL_TEXT">
               <Link href={"/volunteering"}>Volunteering</Link> {" | "}
               <span className="font-bold text-BLACK">{item.name}</span>
-            </h3>
+            </h3> */}
           </div>
 
           <Post image={item.img} text={item.text} name={item.img} />

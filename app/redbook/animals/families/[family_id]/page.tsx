@@ -15,7 +15,7 @@ const FamilyList = ({ params }: { params: { family_id: string } }) => {
           <h2 className="red-book-title font-bold text-BIT_TITLE text-BLACK">
             Red book
           </h2>
-          <h3 className="red-book-subnav text-GRAY text-SMALL_TEXT">
+          {/* <h3 className="red-book-subnav text-GRAY text-SMALL_TEXT">
             <Link href={"/redbook"}>Red book</Link> {" | "}
             <Link href={"/redbook/families"}>
               The Red Data Book of Turkmenistan : Plants and Fungi
@@ -24,7 +24,7 @@ const FamilyList = ({ params }: { params: { family_id: string } }) => {
             <span className="font-bold text-BLACK">
               The Red Data Book of Turkmenistan : Plants and Fungi
             </span>
-          </h3>
+          </h3> */}
         </div>
 
         <section className="red-book-item-list grid grid-cols-3 gap-x-[24px] gap-y-[40px] content-center">

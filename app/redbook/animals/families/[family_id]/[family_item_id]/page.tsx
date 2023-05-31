@@ -24,7 +24,7 @@ const FamilyItem = ({ params }: IProps) => {
           <h2 className="red-book-title font-bold text-BIT_TITLE text-BLACK">
             {item.name}
           </h2>
-          <h3 className="red-book-subnav text-GRAY text-SMALL_TEXT">
+          {/* <h3 className="red-book-subnav text-GRAY text-SMALL_TEXT">
             <Link href={"/redbook"}>Red book</Link> {" | "}
             <Link href={"/redbook/families"}>
               The Red Data Book of Turkmenistan : Plants and Fungi
@@ -35,7 +35,7 @@ const FamilyItem = ({ params }: IProps) => {
             </Link>
             {" | "}
             <span className="font-bold text-BLACK">{item.name}</span>
-          </h3>
+          </h3> */}
         </div>
 
         <Post image={item.img} text={item.text} name={item.name} />

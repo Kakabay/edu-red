@@ -11,12 +11,12 @@ const Families = () => {
           <h2 className="red-book-title font-bold text-BIT_TITLE text-BLACK">
             Red book
           </h2>
-          <h3 className="red-book-subnav text-GRAY text-SMALL_TEXT">
+          {/* <h3 className="red-book-subnav text-GRAY text-SMALL_TEXT">
             <Link href={"/redbook"}>Red book</Link> {" | "}
             <span className="font-bold text-BLACK">
               The Red Data Book of Turkmenistan : Plants and Fungi{" "}
             </span>
-          </h3>
+          </h3> */}
         </div>
         <div className="red-book-families-content flex justify-between gap-[32px]">
           {animalRedbook
