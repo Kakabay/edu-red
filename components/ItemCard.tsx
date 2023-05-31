@@ -4,14 +4,14 @@ import { IRedbookItem } from "@/typings/redbook.data.types";
 
 interface IItemCard extends IRedbookItem {
   org?: string;
-  type: "reserves" | "redbook" | "volunteering";
+  type: "reserves" | "redbook/plants" | "redbook/animals" | "volunteering";
 }
 
 const ItemCard = ({ name, id, img, org, familyId, type }: IItemCard) => {
   return (
     <Link
       href={
-        type === "redbook"
+        type === "redbook/plants" || type === "redbook/animals"
           ? `/${type}/families/${familyId}/${id}`
           : `/${type}/${id}`
       }

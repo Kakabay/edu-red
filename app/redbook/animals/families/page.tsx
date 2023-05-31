@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Container from "@/components/Container";
 import SecondaryBlock from "@/components/SecondaryBlock";
-import { plantRedbook } from "@/data/redbooks";
+import { animalRedbook } from "@/data/redbooks";
 
 const Families = () => {
   return (
@@ -19,11 +19,11 @@ const Families = () => {
           </h3>
         </div>
         <div className="red-book-families-content flex justify-between gap-[32px]">
-          {plantRedbook
-            ? plantRedbook.families.map((item) => {
+          {animalRedbook
+            ? animalRedbook.families.map((item) => {
                 return (
                   <SecondaryBlock
-                    link={`/redbook/families/${item.id}`}
+                    link={`/redbook/animals/families/${item.id}`}
                     imageLink={item.img}
                     text={item.name}
                     key={item.id}
