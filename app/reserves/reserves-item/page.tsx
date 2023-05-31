@@ -1,8 +1,8 @@
-import Contact from '@/components/Contact';
-import Container from '@/components/Container';
-import Post from '@/components/Post';
-import Link from 'next/link';
-import { FunctionComponent } from 'react';
+import Contact from "@/components/Contact";
+import Container from "@/components/Container";
+import Post from "@/components/Post";
+import Link from "next/link";
+import { FunctionComponent } from "react";
 
 interface ReservesItemProps {}
 
@@ -20,12 +20,20 @@ const ReservesItem: FunctionComponent<ReservesItemProps> = () => {
               Repetek Nature Reserve
             </h2>
             <h3 className="red-book-subnav text-GRAY text-SMALL_TEXT">
-              <Link href={'/reserves'}>National reserves</Link> -{' '}
-              <span className="font-bold text-BLACK"> Repetek Nature Reserve</span>`
+              <Link href={"/reserves"}>National reserves</Link> /{" "}
+              <span className="font-bold text-BLACK">
+                {" "}
+                Repetek Nature Reserve
+              </span>
+              `
             </h3>
           </div>
 
-          <Post image="/plant-family-1.jpg" text={itemText.text} name="Repetek Nature Reserve" />
+          <Post
+            image="/plant-family-1.jpg"
+            text={itemText.text}
+            name="Repetek Nature Reserve"
+          />
         </div>
         <Contact
           title="Get in touch with us"

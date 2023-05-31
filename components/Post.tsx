@@ -1,5 +1,5 @@
-import { FunctionComponent } from 'react';
-import Image from 'next/image';
+import { FunctionComponent } from "react";
+import Image from "next/image";
 
 interface PostProps {
   image: string;
@@ -18,7 +18,7 @@ const Post: FunctionComponent<PostProps> = ({ image, text, name }) => {
           height={480}
           unoptimized
           unselectable="off"
-          objectFit="cover"
+          className="w-full h-full object-cover"
         />
       </div>
       <p className="post-text text-BIG_TEXT text-BLACK">{text}</p>

@@ -1,9 +1,9 @@
-import Contact from '@/components/Contact';
-import ContactForm from '@/components/ContactForm';
-import Container from '@/components/Container';
-import Post from '@/components/Post';
-import Link from 'next/link';
-import { FunctionComponent } from 'react';
+import Contact from "@/components/Contact";
+import ContactForm from "@/components/ContactForm";
+import Container from "@/components/Container";
+import Post from "@/components/Post";
+import Link from "next/link";
+import { FunctionComponent } from "react";
 
 interface VolunteeringItemProps {}
 
@@ -21,14 +21,21 @@ const VolunteeringItem: FunctionComponent<VolunteeringItemProps> = () => {
               Event repetek hello world
             </h2>
             <h3 className="red-book-subnav text-GRAY text-SMALL_TEXT">
-              <Link href={'/volunteering'}>Volunteering</Link> -{' '}
-              <span className="font-bold text-BLACK"> Event repetek hello world</span>
+              <Link href={"/volunteering"}>Volunteering</Link> -{" "}
+              <span className="font-bold text-BLACK">
+                {" "}
+                Event repetek hello world
+              </span>
             </h3>
           </div>
 
-          <Post image="/plant-family-1.jpg" text={itemText.text} name="Repetek Nature Reserve" />
+          <Post
+            image="/plant-family-1.jpg"
+            text={itemText.text}
+            name="Repetek Nature Reserve"
+          />
         </div>
-        <div className="volunteering-info flex justify-between">
+        <div className="volunteering-info flex justify-between gap-8">
           <ContactForm />
           <Contact
             title="Get in touch with us"

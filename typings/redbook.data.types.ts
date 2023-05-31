@@ -1,7 +1,9 @@
 export interface IRedbookItem {
   id: number;
+  familyId: number;
   name: string;
   img: string;
+  text: string;
 }
 
 export interface IRedbookFamily {

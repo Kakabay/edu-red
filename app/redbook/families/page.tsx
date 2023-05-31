@@ -1,21 +1,20 @@
-// React components
-import Link from 'next/link';
-// Components
-import Container from '@/components/Container';
-import SecondaryBlock from '@/components/SecondaryBlock';
-// Data
-import { plantRedbook } from '@/data/redbooks';
+import Link from "next/link";
+import Container from "@/components/Container";
+import SecondaryBlock from "@/components/SecondaryBlock";
+import { plantRedbook } from "@/data/redbooks";
 
 const Families = () => {
   return (
     <main>
       <Container className="flex flex-col gap-[48px]">
         <div className="red-book-nav flex flex-col gap-[8px]">
-          <h2 className="red-book-title font-bold text-BIT_TITLE text-BLACK">Red book</h2>
+          <h2 className="red-book-title font-bold text-BIT_TITLE text-BLACK">
+            Red book
+          </h2>
           <h3 className="red-book-subnav text-GRAY text-SMALL_TEXT">
-            <Link href={'/redbook'}>Red book</Link> -{' '}
+            <Link href={"/redbook"}>Red book</Link> /{" "}
             <span className="font-bold text-BLACK">
-              The Red Data Book of Turkmenistan : Plants and Fungi{' '}
+              The Red Data Book of Turkmenistan : Plants and Fungi{" "}
             </span>
           </h3>
         </div>
@@ -24,14 +23,14 @@ const Families = () => {
             ? plantRedbook.families.map((item) => {
                 return (
                   <SecondaryBlock
-                    link="/redbook/families/family-list"
+                    link={`/redbook/families/${item.id}`}
                     imageLink={item.img}
                     text={item.name}
                     key={item.id}
                   />
                 );
               })
-            : 'no families'}
+            : "no families"}
         </div>
       </Container>
     </main>

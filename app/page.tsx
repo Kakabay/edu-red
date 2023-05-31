@@ -1,10 +1,9 @@
 // Components
-import Container from '@/components/Container';
-import Image from 'next/image';
-import Link from 'next/link';
-import MainBlock from '@/components/MainBlock';
-import SecondaryBlock from '@/components/SecondaryBlock';
-import Button from '@/components/Button';
+import Container from "@/components/Container";
+import Image from "next/image";
+import MainBlock from "@/components/MainBlock";
+import SecondaryBlock from "@/components/SecondaryBlock";
+import Button from "@/components/Button";
 
 const Home = () => {
   return (
@@ -13,13 +12,14 @@ const Home = () => {
         <Container className="flex justify-between items-center">
           <div className="hero-content flex flex-col gap-8 max-w-[645px]">
             <h1 className="hero-title text-BLACK font-bold text-BIT_TITLE">
-              Empowering <span className="text-GREEN">Turkmenistan's</span> Ecology for a{' '}
+              Empowering <span className="text-GREEN">Turkmenistan's</span>{" "}
+              Ecology for a{" "}
               <span className="text-GREEN">Sustainable Future</span>
             </h1>
             <p className="hero-text text-BLACK text-BIG_TEXT leading-[150%]">
-              Discover the fragile beauty of Turkmenistan's ecology and join our community of
-              passionate individuals working together to conserve and restore the natural wonders
-              that define our nation.
+              Discover the fragile beauty of Turkmenistan's ecology and join our
+              community of passionate individuals working together to conserve
+              and restore the natural wonders that define our nation.
             </p>
             <Button text="Explore more" />
           </div>
@@ -40,7 +40,8 @@ const Home = () => {
       <section className="news">
         <Container className="flex flex-col gap-[48px]">
           <h2 className="news-title text-BLACK font-bold text-BIT_TITLE">
-            <span className="text-GREEN">News and Updates</span> for a Sustainable Turkmenistan
+            <span className="text-GREEN">News and Updates</span> for a
+            Sustainable Turkmenistan
           </h2>
           <div className="news-content flex flex-col gap-[32px]">
             <MainBlock
