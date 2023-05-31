@@ -23,7 +23,7 @@ const ItemCard = ({ name, id, img, org, familyId, type }: IItemCard) => {
           width={424}
           height={240}
           src={img}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover transition-all hover:scale-110"
         />
       </div>
       <div className="item-card-info flex flex-col gap-[8px] text-BLACK">

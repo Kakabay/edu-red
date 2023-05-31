@@ -18,7 +18,7 @@ const Post: FunctionComponent<PostProps> = ({ image, text, name }) => {
           height={480}
           unoptimized
           unselectable="off"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover transition-all hover:scale-105"
         />
       </div>
       <p className="post-text text-BIG_TEXT text-BLACK">{text}</p>

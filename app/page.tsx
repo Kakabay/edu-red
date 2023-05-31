@@ -23,7 +23,7 @@ const Home = () => {
             </p>
             <Button text="Explore more" />
           </div>
-          <div className="hero-img">
+          <div className="hero-img overflow-hidden rounded-[20px]">
             <Image
               alt="nature"
               src="/hero-img.jpg"
@@ -31,7 +31,7 @@ const Home = () => {
               unselectable="off"
               width={586}
               height={480}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover transition-all hover:scale-110"
             />
           </div>
         </Container>
