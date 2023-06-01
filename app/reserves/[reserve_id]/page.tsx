@@ -34,7 +34,7 @@ const ReservesItem = ({ params }: IProps) => {
         <Contact
           title="Get in touch with us"
           phone="+993 62 24 55 55"
-          email="repetek.res@gmail.com"
+          email="natural.res@gmail.com"
           address="M6WG+JCV, Karaul-Kuyu"
         />
       </Container>
