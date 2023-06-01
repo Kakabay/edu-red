@@ -3,6 +3,7 @@ import Container from "./Container";
 import { footerLinks, footerExternal } from "@/settings/footer";
 import FooterExternal from "./FooterExternal";
 import FooterLink from "./FooterLink";
+import { v4 } from "uuid";
 
 const Footer = () => {
   return (
@@ -19,7 +20,11 @@ const Footer = () => {
         <div className="footer-right">
           <ul className="flex items-center gap-[7vh] justify-end">
             {footerLinks.map((footerLink) => (
-              <FooterLink name={footerLink.name} path={footerLink.path} />
+              <FooterLink
+                name={footerLink.name}
+                path={footerLink.path}
+                key={v4()}
+              />
             ))}
           </ul>
         </div>

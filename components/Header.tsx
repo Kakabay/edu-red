@@ -3,6 +3,7 @@ import Container from "./Container";
 import Link from "next/link";
 import HeaderLink from "./HeaderLink";
 import { title } from "@/settings/title";
+import { v4 } from "uuid";
 
 const Header = () => {
   return (
@@ -18,7 +19,7 @@ const Header = () => {
         <div className="header-right">
           <ul className="flex items-center gap-[7vh] justify-end">
             {headerLinks.map((header) => (
-              <HeaderLink name={header.name} path={header.path} />
+              <HeaderLink name={header.name} path={header.path} key={v4()} />
             ))}
           </ul>
         </div>
